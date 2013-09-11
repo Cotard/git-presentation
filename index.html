@@ -218,25 +218,54 @@ $ git status
 					</code></pre>
 				</section>
 
+
 				<section>
-					<h3>Tracking New Files</h3>
+					<h3>Ignoring Files</h3>
+					<p>Here is example .gitignore file:</p>
 					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-$ git add README
-					</code></pre>
-					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-$ git status
-# On branch master
-# Changes to be committed:
-#   (use "git reset HEAD <file>..." to unstage)
-#
-#   new file:   README
-#
+# a comment - this is ignored
+# no .a files
+*.directory
+
+# only ignore the root TODO file, not subdir/TODO
+/TODO
 					</code></pre>
 				</section>
 
 
+				<section>
+					<h3>Viewing Your Changes</h3>
+					<p>when I edited index.html:</p>
+					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
+$ git status
+# On branch gh-pages
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#       modified:   index.html
+#
+no changes added to commit (use "git add" and/or "git commit -a")
 
+					</code></pre>
+					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
+$ git diff
+index 5c52809..59e9883 100644
+--- a/index.html
++++ b/index.html
+@@ -218,10 +218,35 @@ $ git status
+                                        </code></pre>
+                                </section>
+ 
++
+                                <section>
+-                                       <h3>Tracking New Files</h3>
++                                       <h3>Ignoring Files</h3>
++                                       <p>Here is example .gitignore file:</p>
+                                        <pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
 
+					</code></pre>
+				</section>
 
 
 

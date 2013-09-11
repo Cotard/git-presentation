@@ -36,7 +36,7 @@
 			<div class="slides">
 				<section>
 					<h1>Git</h1>
-					<h3>a centralized version control system</h3>
+					<h3>a distributed version control system</h3>
 				</section>
 
 				<section>
@@ -53,46 +53,38 @@
 				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
-						<h2>Vertical Slides</h2>
+						<h2>Distributed Version Control Systems</h2>
 						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
+							In a DVCS, clients don’t just check out the latest snapshot of the files: they fully mirror the repository. 
 						</p>
 						<a href="#" class="image navigate-down">
 							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
 						</a>
 					</section>
 					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
+						<img src="http://git-scm.com/figures/18333fig0103-tn.png">
 					</section>
 				</section>
 
 				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-					</p>
+					<section>
+						<h2>Git Basics</h2>
+						<p>
+							Every time you commit, Git takes a picture of what all your files look like at that moment and stores a reference to that snapshot. 
+						</p>						
+					</section>
+					<section>
+						<p>
+							To be efficient, if files have not changed, Git doesn’t store the file again—just a link to the previous identical file it has already stored. 
+						</p>
+						<img src="http://git-scm.com/figures/18333fig0105-tn.png">
+					</section>
 				</section>
 
 				<section>
-					<h2>Point of View</h2>
+					<h2>Nearly Every Operation Is Local</h2>
 					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
+						Most operations in Git only need local files and resources to operate.
 					</p>
 					<p>
 						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
